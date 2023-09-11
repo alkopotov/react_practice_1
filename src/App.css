@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+}
+.wrapper{
+  width: 1280px;
+  margin: auto;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: #F4F9E2;
+  /* display: flex; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header__banner {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.header__banner__decription {
+  font-size: 24px;
+  margin: auto;
+  margin-top: 100px;
+  width: 600px;
+  color: #22356F;
+}
+.menu {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+button {
+  width: fit-content;
+  height: 40px;
+  font-size: 20px;
+  background-color: #F9B640;
+  padding: 10px;
+  border-radius: 20px;
+}
+.menu__links {
+  display: flex;
+  font-size: 20px;
+  gap: 30px
+}
+.about {
+  background-color: #62D0DF;
+  display: flex;
+  justify-content: space-between;
+}
+.about__description {
+  margin: auto;
+  width: 586px;
+  font-size: 24px;
+  font-style: italic;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.about__list{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  gap: 50px
+}
+.about__text {
+  font-style: italic;
+  line-height: 2.0;
+  font-size: 24px;
+  margin: auto;
+  width: 600px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards{
+  display: grid;
+  height: 400px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card__item {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 50px;
+  font-style: italic;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__description {
+color: #22356F;
+margin: auto;
+width: 400px;
+font-size: 24px;
+font-style: italic;
 }
