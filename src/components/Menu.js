@@ -10,7 +10,7 @@ let menu_items = ['О нас', 'Услуги', 'Аренда']
         {menu_items.map((elem, index) => 
           <a key={index} href=''>{elem}</a>)}
       </div>
-      <button>СВЯЗАТЬСЯ</button>
+      <button>Связаться</button>
     </div>
    
   )
